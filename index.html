@@ -16,14 +16,19 @@
 </head>
 <body>
     
-    <header>
-        <nav>
+    <header id="header">
+        <nav id="nav-bar">
+            <!-- 
+                Add an img
+                img # "header-img"
+             -->
             <h1 class="logo">
                 CapsLock
             </h1>
             <ul>
                 <li><a class="nav-link" href="#features">FEATURES</a></li>
-                <li><a class="nav-link" href="#video">PRODUCTS</a></li>
+                <li><a class="nav-link" href="#video">VIDEO</a></li>
+                <li><a class="nav-link" href="#products">PRODUCTS</a></li>
                 <li><a class="nav-link" href="#contact-info">CONTACT INFO</a></li>
             </ul>
         </nav>
@@ -43,27 +48,29 @@
         </section>
 
         <section id="features">
-
-            <div class="feature-container">
-                <svg id="truck-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M1 12.5v5a1 1 0 0 0 1 1h1a3 3 0 0 0 6 0h6a3 3 0 0 0 6 0h1a1 1 0 0 0 1-1v-12a3 3 0 0 0-3-3h-9a3 3 0 0 0-3 3v2H6a3 3 0 0 0-2.4 1.2l-2.4 3.2a.61.61 0 0 0-.07.14l-.06.11a1 1 0 0 0-.07.35m16 6a1 1 0 1 1 1 1a1 1 0 0 1-1-1m-7-13a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v11h-.78a3 3 0 0 0-4.44 0H10Zm-2 6H4l1.2-1.6a1 1 0 0 1 .8-.4h2Zm-3 7a1 1 0 1 1 1 1a1 1 0 0 1-1-1m-2-5h5v2.78a3 3 0 0 0-4.22.22H3Z"/></svg>
-                <h2>
-                    Fast & Safe Delivery Service
-                </h2>
+            <div class="features-menu">
+                <div class="feature-container">
+                    <svg id="truck-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M1 12.5v5a1 1 0 0 0 1 1h1a3 3 0 0 0 6 0h6a3 3 0 0 0 6 0h1a1 1 0 0 0 1-1v-12a3 3 0 0 0-3-3h-9a3 3 0 0 0-3 3v2H6a3 3 0 0 0-2.4 1.2l-2.4 3.2a.61.61 0 0 0-.07.14l-.06.11a1 1 0 0 0-.07.35m16 6a1 1 0 1 1 1 1a1 1 0 0 1-1-1m-7-13a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v11h-.78a3 3 0 0 0-4.44 0H10Zm-2 6H4l1.2-1.6a1 1 0 0 1 .8-.4h2Zm-3 7a1 1 0 1 1 1 1a1 1 0 0 1-1-1m-2-5h5v2.78a3 3 0 0 0-4.22.22H3Z"/></svg>
+                    <h2>
+                        Fast & Safe Delivery Service
+                    </h2>
+                </div>
+    
+                <div class="feature-container">
+    
+                    <svg id="eco-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11.25 21q-.96 0-1.893-.255t-1.809-.758q.53-2.41 1.789-4.506q1.257-2.096 3.128-3.712q-2.173 1.266-3.772 3.181q-1.599 1.915-2.168 4.346q-.12-.094-.216-.182t-.217-.206q-1.002-1.04-1.547-2.318Q4 15.313 4 13.95q0-1.508.588-2.875q.589-1.367 1.654-2.433q1.775-1.775 4.539-2.31q2.763-.536 8.146-.209q.373 5.244-.189 8.055q-.561 2.81-2.33 4.58q-1.052 1.09-2.392 1.666q-1.34.576-2.766.576"/></svg>
+                    <h2>
+                        Made with Recycle Materials
+                    </h2>
+                </div>
+                <div class="feature-container">
+                    <svg id="custom-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M2 6c0-1.505.78-3.08 2-4c0 .845.69 2 2 2a3 3 0 0 1 3 3c0 .386-.079.752-.212 1.091a74.515 74.515 0 0 1 2.191 1.808l-2.08 2.08a75.852 75.852 0 0 1-1.808-2.191A2.977 2.977 0 0 1 6 10c-2.21 0-4-1.79-4-4m12.152 6.848l1.341-1.341A4.446 4.446 0 0 0 17.5 12A4.5 4.5 0 0 0 22 7.5c0-.725-.188-1.401-.493-2.007L18 9l-2-2l3.507-3.507A4.446 4.446 0 0 0 17.5 3A4.5 4.5 0 0 0 13 7.5c0 .725.188 1.401.493 2.007L3 20l2 2l6.848-6.848a68.562 68.562 0 0 0 5.977 5.449l1.425 1.149l1.5-1.5l-1.149-1.425a68.562 68.562 0 0 0-5.449-5.977"/></svg>
+                    <h2>
+                        High Customization Options
+                    </h2>
+                </div>
             </div>
-
-            <div class="feature-container">
-
-                <svg id="eco-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11.25 21q-.96 0-1.893-.255t-1.809-.758q.53-2.41 1.789-4.506q1.257-2.096 3.128-3.712q-2.173 1.266-3.772 3.181q-1.599 1.915-2.168 4.346q-.12-.094-.216-.182t-.217-.206q-1.002-1.04-1.547-2.318Q4 15.313 4 13.95q0-1.508.588-2.875q.589-1.367 1.654-2.433q1.775-1.775 4.539-2.31q2.763-.536 8.146-.209q.373 5.244-.189 8.055q-.561 2.81-2.33 4.58q-1.052 1.09-2.392 1.666q-1.34.576-2.766.576"/></svg>
-                <h2>
-                    Made with Recycle Materials
-                </h2>
-            </div>
-            <div class="feature-container">
-                <svg id="custom-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M2 6c0-1.505.78-3.08 2-4c0 .845.69 2 2 2a3 3 0 0 1 3 3c0 .386-.079.752-.212 1.091a74.515 74.515 0 0 1 2.191 1.808l-2.08 2.08a75.852 75.852 0 0 1-1.808-2.191A2.977 2.977 0 0 1 6 10c-2.21 0-4-1.79-4-4m12.152 6.848l1.341-1.341A4.446 4.446 0 0 0 17.5 12A4.5 4.5 0 0 0 22 7.5c0-.725-.188-1.401-.493-2.007L18 9l-2-2l3.507-3.507A4.446 4.446 0 0 0 17.5 3A4.5 4.5 0 0 0 13 7.5c0 .725.188 1.401.493 2.007L3 20l2 2l6.848-6.848a68.562 68.562 0 0 0 5.977 5.449l1.425 1.149l1.5-1.5l-1.149-1.425a68.562 68.562 0 0 0-5.449-5.977"/></svg>
-                <h2>
-                    High Customization Options
-                </h2>
-            </div>
+            
         </section>
 
         <section id="video">
@@ -132,6 +139,14 @@
         </section>
 
         <section id="contact-info">
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <h2>
+                    Type your Email for Keyboard Updates
+                </h2>
+                <input type="email" name="email" id="email" placeholder="Type your email here...">
+                <input id="submit" type="submit" value="Submit">
+            </form>
+
             <div>
                 <h2>
                     Contact Us:
