@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+    width: 90%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* ------------ Navigation ---------------- */
+
+header {
+    top: 0;
+    position: fixed;
+    height: 100px;
+    width: 90%;
+    background-color: white;
+    border-bottom: 0.5px solid goldenrod;
+}
+
+nav {
+    height: 100%;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    color: goldenrod;
+}
+
+.logo:hover {
+    color: black;
+    cursor: pointer;
+    transition: ease-in 0.2s;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav > ul > li {
+    padding: 15px 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-link:hover, #logo:hover {
+    color: goldenrod;
+    transition: ease-in 0.25s;
+    cursor: pointer;
+}
+
+/* ------------ Main ---------------- */
+
+main {
+    margin-top: 110px;
+}
+
+#welcome {
+    background-image: url('./Pexels\ teclados/teclado-colores-claros.jpg');
+    background-size: cover;
+
+    height: 400px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome > div {
+    background-color: rgba(209, 196, 178, 0.8);
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#welcome > div > p {
+    margin-top: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Features Section */
+#features {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding: 5px 15px;
+
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.title-container {
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.feature-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 80%;
+    margin: auto;
+}
+
+#eco-svg, #truck-svg, #custom-svg {
+    fill: goldenrod;
+}
+
+/* Iframe Section */
+#video {
+    text-align: center;
+}
+
+#video > h2 {
+    margin-bottom: 8px;
+}
+
+iframe {
+    border: 1px solid black;
+
+    margin: auto;
+
+    width: 90%;
+    height: 600px;
+}
+
+/* Products */
+#products {
+    margin: auto;
+    width: 90%;
+}
+
+#products > h2 {
+    border-bottom: 1px solid goldenrod;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.products-container {
+    padding: 15px 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.product > img {
+    width: 500px;
+}
+
+.buy-button {
+    margin-top: 10px;
+    border: 4px solid black;
+    width: 130px;
+    height: 45px;
+    background-color: white;
+    font-size: large;
+    padding: 5px 8px; 
+}
+
+.buy-button:hover {
+    cursor: pointer;
+    color: goldenrod;
+    border: 4px solid goldenrod;
+}
+
+
+/* Contact Us Section */
+#contact-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#contact-info div {
+    padding: 20px 0px;
+}
+
+#contact-info > div > h2 {
+    margin-bottom: 20px;
+    text-decoration: 0.5px underline goldenrod;
+}
+
+#contact-info > div > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-link:hover {
+    cursor: pointer;
+    text-decoration: underline goldenrod;
+}
+
+
+/* ------------ Footer ---------------- */
+footer {
+    border-top: 0.75px solid goldenrod;
+    margin-top: 80px;
+    color: black;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+footer > span {
+    font-style: italic;
+}
+
+/* PSEUDO MEDIA QUERIES */
+@media (max-width: 600px) {
+    header {
+        height: auto;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav > ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        margin-top: 200px;
+        width: auto;
+    }
+
+    nav > ul > li {
+        margin: 0px;
+        padding: 5px;
+    }
+
+    #welcome > div {
+        width: 80%;
+    }
+
+    .feature-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: small;
+    }
+
+    .feature-container h2 {
+        padding-top: 5px;
+    }
+
+    #video h2 {
+        font-size: 1.25rem;
+    }
+
+    iframe {
+        width: 90%;
+        margin: auto;
+        height: 200px;
+    }
+
+    .product > img {
+        width: 90%;
+    }
+
+    .product > button {
+        border: 2px solid black;
+        width: 35%;
+        font-size: small;
+    }
+}
