@@ -95,13 +95,16 @@ main {
 
 /* Features Section */
 #features {
-    margin-top: 150px;
-    margin-bottom: 150px;
     padding: 5px 15px;
 
     display: flex;
     flex-direction: column;
-    height: 200px;
+    height: 400px;
+}
+
+.features-menu {
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 .title-container {
@@ -118,6 +121,7 @@ main {
 
     width: 80%;
     margin: auto;
+    margin-bottom: 20px;
 }
 
 #eco-svg, #truck-svg, #custom-svg {
@@ -126,6 +130,7 @@ main {
 
 /* Iframe Section */
 #video {
+    padding-top: 50px;
     text-align: center;
 }
 
@@ -145,6 +150,7 @@ iframe {
 /* Products */
 #products {
     margin: auto;
+    padding-top: 80px; 
     width: 90%;
 }
 
@@ -192,6 +198,40 @@ iframe {
 
 
 /* Contact Us Section */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > h2 {
+    padding: 20px 0px;
+}
+
+#email {
+    border-radius: 5px;
+    margin: auto;
+    padding: 5px;
+    border: 1px solid goldenrod;
+    width: 225px;
+}
+
+#submit {
+    margin: auto;
+    width: 120px;
+    height: 25px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid goldenrod;
+    background-color: white;
+    color: grey;
+}
+
+#submit:hover {
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+}
+
 #contact-info {
     margin-top: 20px;
     text-align: center;
@@ -271,6 +311,10 @@ footer > span {
         width: 80%;
     }
 
+    #features {
+        padding-top: 35px;
+    }
+
     .feature-container {
         display: flex;
         flex-direction: column;
@@ -282,6 +326,10 @@ footer > span {
         padding-top: 5px;
     }
 
+    #video {
+        padding-top: 200px;
+    }
+
     #video h2 {
         font-size: 1.25rem;
     }
@@ -289,7 +337,12 @@ footer > span {
     iframe {
         width: 90%;
         margin: auto;
-        height: 200px;
+        height: auto;
+    }
+
+    #products {
+        padding-top: 175px;
+        padding-bottom: 0px;
     }
 
     .product > img {
